@@ -1,0 +1,90 @@
+body{
+     font-family: sans-serif;
+}
+.btn {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 16px;
+    transition: all 0.4s ease;
+}
+
+.popup.popup_active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__wrapper {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px 16px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.popup__content h2 {
+    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    white-space: normal;
+}
+
+.popup__content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    white-space: normal;
+}
+
+.popup__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__close-btn {
+    background-color: red;
+    color: white;
+}
+
+.popup__close-btn:hover {
+    background-color: #5a6161;
+}
+
+.popup__accept-btn {
+    background-color: blue;
+    color: white;
+}
+
+.popup__accept-btn:hover {
+    background-color: #5a6161;
+}
+.test-content{
+   max-width: calc(1440px - 32px);
+   margin: 0 auto;
+   padding: 50px 16px;
+}
+.test-content p {
+    margin-bottom: 30px;
+}

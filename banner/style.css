@@ -1,0 +1,27 @@
+
+.slider-full__img_wrapper,
+.slider-full__video_wrapper {
+    max-width: 100%;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+.slider-full__img_wrapper img ,
+.slider-full__video_wrapper video{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media (pointer: coarse){
+    [class*="swiper-button"]{
+        display: none;
+    }
+}
