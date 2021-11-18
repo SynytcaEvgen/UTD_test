@@ -9,7 +9,7 @@
     padding-top: 56.25%;
     position: relative;
 }
-.slider-full__img_wrapper img ,
+.slider-full__img_wrapper img,
 .slider-full__video_wrapper video{
     width: 100%;
     position: absolute;
@@ -17,7 +17,6 @@
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
-
 }
 
 @media (pointer: coarse){
