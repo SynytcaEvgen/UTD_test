@@ -42,6 +42,4 @@ function init() {
             this.classList.remove('header-main--overlay');
         }
     })
-    
-    
 };
