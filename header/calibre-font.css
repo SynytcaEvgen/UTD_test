@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Calibre";
+    src: url("fonts/Calibre/TestCalibre-Medium.eot");
+    src: local("☺"), url("fonts/Calibre/TestCalibre-Medium.woff") format("woff"),
+        url("fonts/Calibre/TestCalibre-Medium.ttf") format("truetype"),
+        url("fonts/Calibre/TestCalibre-Medium.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Calibre';
+    src: url('fonts/Clibre/TestCalibre-Semibold.eot');
+    src: local('☺'), url('fonts/Clibre/TestCalibre-Semibold.woff') format('woff'), 
+    url('fonts/Clibre/TestCalibre-Semibold.ttf') format('truetype'), 
+    url('fonts/Clibre/TestCalibre-Semibold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Calibre';
+    src: url('fonts/Calibre/TestCalibre-Regular.eot');
+    src: local('☺'), url('fonts/Calibre/TestCalibre-Regular.woff') format('woff'), 
+    url('fonts/Calibre/TestCalibre-Regular.ttf') format('truetype'), 
+    url('fonts/Calibre/TestCalibre-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

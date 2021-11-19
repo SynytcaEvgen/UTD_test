@@ -14,32 +14,235 @@
     <meta name="theme-color" content="#A21B1B">
     <link rel="apple-touch-icon" sizes="180x180" href="">
     <link rel="shortcut icon" href="" type="image/svg">
+    <link rel="stylesheet" href="reset_html.css">
+    <link rel="stylesheet" href="calibre-font.css">
+    <link rel="stylesheet" href="icon-font.css">
     <link rel="stylesheet" href="style.css">
+    <script src="bodyScrollLock.js"></script>
     <script src="script.js"></script>
-    <title>UTD Test popup</title>
+    <title>UTD Test header</title>
 </head>
 <body>
-    <div class="popup popup_active">
-        <div class="popup__wrapper">
-            <div class="popup__content">
-                <h2>Same best headers</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium saepe provident quo explicabo suscipit soluta, dignissimos necessitatibus fugiat at ducimus eveniet, fuga, enim dolores mollitia hic quis? Molestias, facilis inventore?
-                    Nisi ratione architecto repellendus reiciendis ab natus unde dolor iusto. Quisquam laudantium facilis blanditiis, et voluptatem atque impedit consequatur sit praesentium ipsum? Architecto consequatur voluptas quae optio vitae doloremque error?
-                    Rerum, culpa expedita. Veniam nulla hic tenetur cupiditate aut delectus culpa voluptatem autem et, sequi neque qui ducimus placeat architecto fugit tempora. Eos rem libero vel, porro commodi ipsa maxime?
-                    Accusamus hic eaque sapiente, dignissimos ex autem unde repellendus, numquam maiores debitis quas assumenda aspernatur voluptatum commodi doloribus voluptate laboriosam perspiciatis rem tempore possimus nulla delectus fugit soluta incidunt? Unde!
-                    Commodi consequatur dignissimos modi dicta autem, accusamus repellendus numquam impedit deleniti aperiam debitis a placeat quidem maiores consectetur qui perspiciatis inventore atque quam. Ut alias praesentium eum facere sequi amet?
-                    Iusto magnam, perspiciatis recusandae sed, ab minima pariatur iste, provident doloremque rerum praesentium? Optio illo aspernatur iusto autem? Delectus saepe omnis placeat aliquid facere sapiente optio hic, maxime ex recusandae!
-                    Commodi a facilis, veritatis sed obcaecati id esse magnam minima, repellendus quod recusandae corrupti fugit voluptas nulla ipsum suscipit doloribus iure quisquam. Itaque quia aperiam illo et unde qui tempora.
-                    Incidunt omnis maxime vel, obcaecati ullam veritatis eos minima unde, illo temporibus repudiandae ratione minus tempora, doloremque aut veniam optio at voluptatum asperiores quae beatae. Perferendis voluptas explicabo nam accusamus.
-                    Perspiciatis nostrum sequi, expedita consequatur voluptatum reiciendis amet excepturi perferendis inventore tenetur fuga sapiente harum libero enim molestiae quis laborum repellat et ab doloremque ipsum vitae similique eveniet. Delectus, sunt!
-                </p>
-                <div class="popup__btn-wrapper">
-                    <button class="btn popup__close-btn">закрыть</button>
-                    <button class="btn popup__accept-btn">принять</button>
-                </div>
+
+    <header id="header-main" class="header-main">
+        <div class="header-main__promotion">
+            <div class="header-main__promotion-col"></div>
+            <p class="header-main__promotion-text">Built in headline</p>
+            <div class="header-main__promotion-col header-main__promotion-col--right">
+                    <a href="tel:123-456-7890" class="header-main__promotion-item">123-456-7890</a>
+                    <a href="#" class="header-main__promotion-item">
+                        <img class="header-main__promotion-icon" src="img/location.png" alt="location">
+                        Find a Dealer
+                    </a>
+                    <a href="#" class="header-main__promotion-item">Login/Sign Up</a>
             </div>
         </div>
-    </div>
+
+        <div class="header-main__container">
+            <button id="burger-btn" class="burger-btn menu-button header-main__button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-main__logo">
+                <a href="#" class="header-main__logo-link">
+                    <img class="header-main__logo-image" src="img/ROVAL-logo_1.png" alt="logo">    
+                </a>
+            </div>
+            <nav id="site-navigation" class="header-main__navigation" role="navigation">
+                <ul class="site-menu">
+                    <li class="site-menu__item site-menu__item--has-subnav js-site-menu-item">
+                        <a href="#" class="site-menu__link js-site-menu-link">Shop <span class="site-menu__arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 7 12"><path d="M5.01 5.984L0 1.041.707.333l5.651 5.651-5.65 5.651L0 10.928z" fill="#121212" fill-rule="nonzero"/></svg></span></a>
+                        <div class="site-menu__dropdown-container js-dropdown-container">
+                            <button class="site-menu__previous js-close-submenu"><span class="site-menu__previous-arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/></svg></span>Shop</button>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__col">
+                                    <div class="menu-dropdown__item js-dropdown-item">
+                                        <a href="#" class="menu-dropdown__item-img-link">
+                                                <img src="img/images.png" class="menu-dropdown__item-img" alt="">
+                                            </a>
+                                            <a href="#" class="menu-dropdown__item-link">Road
+                                            <span class="menu-dropdown__item-arrow">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12">
+                                                    <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-dropdown__col">
+                                    <div class="menu-dropdown__item js-dropdown-item"><a href="#" class="menu-dropdown__item-img-link">
+                                                <img src="img/images.png" class="menu-dropdown__item-img" alt="ee">
+                                            </a><a href="#" class="menu-dropdown__item-link">Gravel<span class="menu-dropdown__item-arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/></svg></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-dropdown__col">
+                                    <div class="menu-dropdown__item js-dropdown-item"><a href="#" class="menu-dropdown__item-img-link">
+                                                <img src="img/images.png" class="menu-dropdown__item-img" alt="ee">
+                                            </a><a href="#" class="menu-dropdown__item-link">XC<span class="menu-dropdown__item-arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/></svg></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-dropdown__col">
+                                    <div class="menu-dropdown__item js-dropdown-item"><a href="/collections/trail" class="menu-dropdown__item-img-link">
+                                                <img src="img/images.png" class="menu-dropdown__item-img" alt="">
+                                            </a><a href="#" class="menu-dropdown__item-link">Trail<span class="menu-dropdown__item-arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/></svg></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-dropdown__col">
+                                    <div class="menu-dropdown__item js-dropdown-item"><a href="/collections/triathlon" class="menu-dropdown__item-img-link">
+                                                <img src="img/images.png" class="menu-dropdown__item-img" alt="">
+                                            </a><a href="#" class="menu-dropdown__item-link">Triathlon<span class="menu-dropdown__item-arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/></svg></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-dropdown__col">
+                                    <div class="menu-dropdown__item menu-dropdown__item--block js-dropdown-item">
+                                        <a href="#" class="menu-dropdown__item-link menu-dropdown__item-link--block">
+                                            Components
+                                            <span class="menu-dropdown__item-arrow">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12">
+                                                    <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="menu-dropdown__item-link menu-dropdown__item-link--block">
+                                            Accessories
+                                            <span class="menu-dropdown__item-arrow">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12">
+                                                    <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="menu-dropdown__item-link menu-dropdown__item-link--block">
+                                            True Deals
+                                            <span class="menu-dropdown__item-arrow">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12">
+                                                    <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <p class="menu-dropdown__item-small-text">Up to 70% off</p></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="site-menu__item site-menu__item--has-subnav js-site-menu-item">
+                        <a href="#" class="site-menu__link js-site-menu-link">Our story <span class="site-menu__arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 7 12"><path d="M5.01 5.984L0 1.041.707.333l5.651 5.651-5.65 5.651L0 10.928z" fill="#121212" fill-rule="nonzero"/></svg></span></a>
+                        <div class="site-menu__dropdown-container js-dropdown-container">
+                            <button class="site-menu__previous js-close-submenu"><span class="site-menu__previous-arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/></svg></span>Our story</button>
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__col">
+                                    <div class="menu-dropdown__item js-dropdown-item"><a href="#" class="menu-dropdown__item-img-link">
+                                                <img src="img/images.png" class="menu-dropdown__item-img" alt="">
+                                            </a><a href="#" class="menu-dropdown__item-link">Our Promise<span class="menu-dropdown__item-arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/></svg></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-dropdown__col">
+                                    <div class="menu-dropdown__item js-dropdown-item"><a href="#" class="menu-dropdown__item-img-link">
+                                                <img src="img/images.png" class="menu-dropdown__item-img" alt="">
+                                            </a><a href="#" class="menu-dropdown__item-link">Our People<span class="menu-dropdown__item-arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/></svg></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-dropdown__col">
+                                    <div class="menu-dropdown__item js-dropdown-item"><a href="#" class="menu-dropdown__item-img-link">
+                                                <img src="img/images.png" class="menu-dropdown__item-img" alt="">
+                                            </a><a href="#" class="menu-dropdown__item-link">Our Process<span class="menu-dropdown__item-arrow"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/></svg></span>
+                                        </a>
+                                    </div>
+                                </li>    
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="site-menu__item site-menu__item--has-subnav js-site-menu-item">
+                        <a href="#" class="site-menu__link js-site-menu-link">
+                            Support 
+                            <span class="site-menu__arrow">
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 7 12">
+                                    <path d="M5.01 5.984L0 1.041.707.333l5.651 5.651-5.65 5.651L0 10.928z" fill="#121212" fill-rule="nonzero"/></svg>
+                                </span>
+                        </a>
+                        <div class="site-menu__dropdown-container site-menu__dropdown-container--default js-dropdown-container">
+                            <button class="site-menu__previous js-close-submenu">
+                                <span class="site-menu__previous-arrow">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-dark" viewBox="0 0 18 12"><path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"/>
+                                    </svg>
+                                </span>
+                                Support
+                            </button>
+                            <ul class="menu-dropdown menu-dropdown--centered">
+                                    <li class="menu-dropdown__base-item js-site-menu-item">
+                                        <a href="#" class="menu-dropdown__base-link js-site-menu-link">Shipping &amp; Returns</a>
+                                    </li>
+                                    <li class="menu-dropdown__base-item js-site-menu-item">
+                                        <a href="#" class="menu-dropdown__base-link js-site-menu-link">Warranty</a>
+                                    </li>
+                                    <li class="menu-dropdown__base-item js-site-menu-item">
+                                        <a href="#" class="menu-dropdown__base-link js-site-menu-link">FAQS</a>
+                                    </li>
+                                    <li class="menu-dropdown__base-item js-site-menu-item">
+                                        <a href="#" class="menu-dropdown__base-link js-site-menu-link">Contact Us</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="site-menu__item js-site-menu-item">
+                        <a href="#" class="site-menu__link js-site-menu-link">Journal</a>
+                    </li>    
+                </ul>
+
+                <ul class="site-menu site-menu--secondary">
+                        <a href="#" class="header-main__promotion-item">
+                            <li class="site-menu__item">
+                                <a href="/pages/dealers" class="site-menu__link site-menu__link--gray">
+                                    <span class="site-menu__icon"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-place" viewBox="0 0 10 14"><defs><path d="M5 0C2.236 0 0 2.191 0 4.9 0 8.575 5 14 5 14s5-5.425 5-9.1C10 2.191 7.764 0 5 0zm0 6.65c-.986 0-1.786-.784-1.786-1.75S4.014 3.15 5 3.15s1.786.784 1.786 1.75S5.986 6.65 5 6.65z" id="a"/></defs><use fill="#FFF" xlink:href="#a" fill-rule="evenodd"/></svg></span>Find a Dealer</a>
+                            </li>
+                        </a>
+                        <li class="site-menu__item">
+                            <a href="#" class="site-menu__link site-menu__link--gray">Login/Sign Up</a>
+                        </li>
+                        <li class="site-menu__item site-menu__item--wide">
+                                <span class="site-menu__item-label">Call us at:</span>
+                            <a href="tel:123-456-7890" class="site-menu__link site-menu__link--inline">123-456-7890</a>
+                        </li>
+                    </ul>
+            </nav>
+            <div class="header-main__additional">
+                <form class="header-search js-search-bar" action="/search" method="get" role="search">
+                    <div class="header-search__input-group">
+                        <button type="button" class="header-search__button js-search-button">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search-2" viewBox="0 0 16 16">
+                                <path d="M10.805 12.131a6.562 6.562 0 1 1 1.326-1.326l3.282 3.282a.938.938 0 0 1-1.326 1.326l-3.282-3.282zm-3.93-.569a4.688 4.688 0 1 0 0-9.375 4.688 4.688 0 0 0 0 9.376z" fill="#414141" fill-rule="nonzero" opacity=".4"/>
+                            </svg>
+                        </button>
+                        <input type="search" id="Search" class="header-search__input" autofocus autocomplete="off" placeholder="Search" required>
+                    </div>
+                    <button class="header-search__close js-close-search" type="button" aria-label="close-search">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </form>
+                <a href="#" class="header-main__cart">
+                    <span class="header-main__cart-icon">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart-2" viewBox="0 0 24 23">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0-1h24v24H0z"/>
+                                <g fill="#FFF" fill-rule="nonzero">
+                                    <circle cx="18.412" cy="20.043" r="2.125"/>
+                                    <path d="M24 3.243H5.368L4.708 0H0v1.704h3.316l2.473 12.073-.952 3.59h16.635v-1.703H7.053l.495-1.832-.018-.073 14.84-1.21z"/>
+                                    <circle cx="7.786" cy="20.043" r="2.125"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
